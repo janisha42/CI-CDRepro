@@ -21,8 +21,8 @@ def main():
     # sha1= str(commits[1]["sha"])
 
     if sha_remote:
-        # subprocess.call(['sh', '/deploy.sh'])
-        print(sha_remote)
+        subprocess.call(['sh', 'home/ubuntu/deploy.sh'])
+        #print(sha_remote)
     else:
         print("Already up to date.")
     
