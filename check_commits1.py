@@ -17,10 +17,10 @@ def main():
     # Get the latest commits.
     commits = get_commits(repo_url)
 
-    sha_remote = str(commits[0]["sha"])
+    sha_latest = str(commits[0]["sha"])
     # sha1= str(commits[1]["sha"])
 
-    if sha_remote:
+    if sha_latest:
         subprocess.call(['sh', '/home/ubuntu/deploy.sh'])
         #print(sha_remote)
     else:
