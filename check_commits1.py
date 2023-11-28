@@ -4,6 +4,7 @@ import subprocess
 
 def get_commits(repo_url):
     response = requests.get(repo_url)
+    #check the commit
     if response.status_code == 200:
         commits = response.json()
         return commits
@@ -18,7 +19,7 @@ def main():
     commits = get_commits(repo_url)
 
     sha_latest = str(commits[0]["sha"])
-    # sha1= str(commits[1]["sha"])
+    # sha1_latest= str(commits[1]["sha"])
 
     if sha_latest:
         subprocess.call(['sh', '/home/ubuntu/deploy.sh'])
