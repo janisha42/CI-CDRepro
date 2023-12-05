@@ -2,4 +2,4 @@
 
 cd CI-CDRepro
 
-python3 check_commits1.pys
+python check_commits1.py
