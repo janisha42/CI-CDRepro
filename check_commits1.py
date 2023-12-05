@@ -30,5 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-#/home/ubuntu/CI-CDRepro/check_commit1.py
